@@ -1,0 +1,6 @@
+---
+BasedOnStyle: WebKit
+ColumnLimit: 0
+PointerBindsToType: false
+SpacesBeforeTrailingComments: 4
+...
