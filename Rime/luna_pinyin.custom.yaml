@@ -1,0 +1,17 @@
+patch:
+  import_preset: default
+  punctuator/full_shape:
+    "/" : "、"
+  punctuator/half_shape:
+    "/" : "、"
+  switches/@0/reset: 1
+  speller/algebra:
+    - derive/([ei])n$/$1ng/            # en => eng, in => ing
+    - derive/([ei])ng$/$1n/            # eng => en, ing => in
+    - abbrev/^([a-z]).+$/$1/
+    - abbrev/^([zcs]h).+$/$1/
+  key_binder/bindings:
+    - { when: has_menu, accept: minus, send: Page_Up }
+    - { when: has_menu, accept: equal, send: Page_Down }
+    - { when: paging, accept: bracketleft, send: Page_Up }
+    - { when: has_menu, accept: bracketright, send: Page_Down }

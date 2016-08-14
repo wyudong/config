@@ -1,0 +1,9 @@
+patch:
+  style/font_point: 18
+  style/color_scheme: native
+  style/font_face: PingFang
+  style/horizontal: true
+  app_options/com.apple.Terminal:
+    ascii_mode: true
+  app_options/com.alfredapp.Alfred:
+    ascii_mode: true
