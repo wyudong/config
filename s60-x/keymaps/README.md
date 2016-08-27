@@ -32,8 +32,9 @@ A file named `s60-x_<keymap>.hex` will be generated under `s60-x/`.
 
 Turn over S60-X and press the S1 button to get ready for flashing. After the button pressed, it will disable input of the keyboard. Start to flash firmware using:
 
-`$ sudo dfu-programmer atmega32u4 erase && sudo dfu-programmer atmega32u4 flash s60-x_donkey.hex && sudo dfu-programmer atmega32u4 start
-`
+```
+$ sudo dfu-programmer atmega32u4 erase && sudo dfu-programmer atmega32u4 flash s60-x_donkey.hex && sudo dfu-programmer atmega32u4 start
+```
 
 DONE!
 
