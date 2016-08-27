@@ -26,19 +26,19 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┐
 │Grave│ F1  │ F2  │ F3  │ F4  │ F5  │ F6  │ F7  │ F8  │ F9  │ F10 │ F11 │ F12 │▒▒▒▒▒│ Del │
 ├─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤
-│     │     │     │     │     │     │     │     │ Up  │     |     |     |     |     │█████│
+│     │     │     │     │     │     │     │PgUp │ Up  │PgDn |     |     |     |     │█████│
 ├─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤
-│ Cap │ VoD │ VoU │ Mut │     │     │PgUp │Left │Down │Right│     │     │▒▒▒▒▒│     │█████│
+│ Cap │ VoD │ VoU │ Mut │     │     │     │Left │Down │Right│     │     │▒▒▒▒▒│     │█████│
 ├─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤
-│     │▒▒▒▒▒│     │     │     │     │     │PgDn │     │     │     │     │▒▒▒▒▒│     │▒▒▒▒▒│
+│     │▒▒▒▒▒│     │     │     │     │     │     │     │     │     │     │▒▒▒▒▒│     │▒▒▒▒▒│
 ├─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤
 │     │     │     │█████│█████│█████│     │█████│█████│█████│     │     │     │     │█████│
 └─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┘
 */
     LEGACY_KEYMAP(GRV,    F1,   F2,   F3,   F4,   F5,   F6,   F7,   F8,   F9,  F10,  F11,  F12, TRNS,  DEL, \
-                  TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS,   UP, TRNS, TRNS, TRNS, TRNS, TRNS,       \
-                  CAPS, VOLD, VOLU, MUTE, TRNS, TRNS, PGUP, LEFT, DOWN, RGHT, TRNS, TRNS, TRNS, TRNS,       \
-                  TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, PGDN, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, \
+                  TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, PGUP,   UP, PGDN, TRNS, TRNS, TRNS, TRNS,       \
+                  CAPS, VOLD, VOLU, MUTE, TRNS, TRNS, TRNS, LEFT, DOWN, RGHT, TRNS, TRNS, TRNS, TRNS,       \
+                  TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, \
                   TRNS, TRNS, TRNS,                   TRNS,                   TRNS, TRNS, TRNS, TRNS),
 };
 
