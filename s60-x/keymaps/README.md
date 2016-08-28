@@ -3,6 +3,7 @@
 ## S60-X Resources
 
 - [Massdrop page](https://www.massdrop.com/buy/sentraq-60-diy-keyboard-kit?mode=guest_open)
+- [Buy from Sentraq](https://sentraq.com/collections/all)
 
 ## Get started
 
@@ -18,13 +19,13 @@ $ brew install avr-libc
 $ brew install dfu-programmer
 ```
 
-### Build keymap binary
+### Build `<keymap>.hex`
 
-Build custom keymap to binary file.
+Clone `https://github.com/jackhumbert/qmk_firmware.git` and cd to `qmk_firmware/keyboards/s60-x/`. Files under `keymaps/` are good references before building custom keymaps. If you are interested in my [keymap](https://github.com/wyudong/config/tree/master/s60-x/keymaps/donkey), just download `keymaps` folder in this repository.
 
-1. Clone `https://github.com/jackhumbert/qmk_firmware.git`.
-2. Go to `keyboards/s60-x/`, create custom keymap folder under `keymaps/`.
-3. `$ make keymap=[custom|poker|poker_set|poker_bit|plain|hasu|spacefn|hhkb|<keymap>]`
+Build `keymap.c` to `<keymap>.hex` using :
+
+`$ make keymap=[custom|poker|poker_set|poker_bit|plain|hasu|spacefn|hhkb|<keymap>]`
 
 A file named `s60-x_<keymap>.hex` will be generated under `s60-x/`.
 
@@ -62,11 +63,11 @@ Source in [donkey.c](https://github.com/wyudong/config/blob/master/s60-x/keymaps
     ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┐
     │Grave│ F1  │ F2  │ F3  │ F4  │ F5  │ F6  │ F7  │ F8  │ F9  │ F10 │ F11 │ F12 │▒▒▒▒▒│ Del │
     ├─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤
-    │     │     │     │     │     │     │     │     │ Up  │     |     |     |     |     │█████│
+    │     │     │     │     │     │     │     │PgUp │ Up  │PgDn |     |     |     |     │█████│
     ├─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤
-    │ Cap │ VoD │ VoU │ Mut │     │     │PgUp │Left │Down │Right│     │     │▒▒▒▒▒│     │█████│
+    │ Cap │ VoD │ VoU │ Mut │     │     │     │Left │Down │Right│     │     │▒▒▒▒▒│     │█████│
     ├─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤
-    │     │▒▒▒▒▒│     │     │     │     │     │PgDn │     │     │     │     │▒▒▒▒▒│     │▒▒▒▒▒│
+    │     │▒▒▒▒▒│     │     │     │     │     │     │     │     │     │     │▒▒▒▒▒│     │▒▒▒▒▒│
     ├─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤
     │     │     │     │█████│█████│█████│     │█████│█████│█████│     │     │     │     │█████│
     └─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┴─────┘
