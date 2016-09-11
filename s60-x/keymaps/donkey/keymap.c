@@ -28,7 +28,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 ├─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤
 │     │     │     │     │     │     │     │PgUp │ Up  │PgDn |     |     |     |     │█████│
 ├─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤
-│ Cap │ VoD │ VoU │ Mut │     │     │     │Left │Down │Right│     │     │▒▒▒▒▒│     │█████│
+│ Cap │ Mut │ VoD │ VoU │     │     │     │Left │Down │Right│     │     │▒▒▒▒▒│     │█████│
 ├─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤
 │     │▒▒▒▒▒│     │     │     │     │     │     │     │     │     │     │▒▒▒▒▒│     │▒▒▒▒▒│
 ├─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┼─────┤
@@ -37,7 +37,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 */
     LEGACY_KEYMAP(GRV,    F1,   F2,   F3,   F4,   F5,   F6,   F7,   F8,   F9,  F10,  F11,  F12, TRNS,  DEL, \
                   TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, PGUP,   UP, PGDN, TRNS, TRNS, TRNS, TRNS,       \
-                  CAPS, VOLD, VOLU, MUTE, TRNS, TRNS, TRNS, LEFT, DOWN, RGHT, TRNS, TRNS, TRNS, TRNS,       \
+                  CAPS, MUTE, VOLD, VOLU, TRNS, TRNS, TRNS, LEFT, DOWN, RGHT, TRNS, TRNS, TRNS, TRNS,       \
                   TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, TRNS, \
                   TRNS, TRNS, TRNS,                   TRNS,                   TRNS, TRNS, TRNS, TRNS),
 };
