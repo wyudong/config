@@ -73,8 +73,8 @@ source /usr/local/opt/nvm/nvm.sh
 export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
 
 ## Android
-export PATH="$HOME/Library/Android/sdk/platform-tools:$PATH"
-export PATH="$HOME/Library/Android/ndk:$PATH"
+# export PATH="$HOME/Library/Android/sdk/platform-tools:$PATH"
+# export PATH="$HOME/Library/Android/ndk:$PATH"
 
 ## Load RVM into a shell session *as a function*
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
@@ -86,3 +86,6 @@ export PATH="$HOME/Library/Android/ndk:$PATH"
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
     . $(brew --prefix)/etc/bash_completion
 fi
+
+## Personal bin
+export PATH="$HOME/bin:$PATH"
