@@ -27,7 +27,7 @@ Build `keymap.c` to `<keymap>.hex` using :
 
 `$ make keymap=[custom|poker|poker_set|poker_bit|plain|hasu|spacefn|hhkb|<keymap>]`
 
-A file named `s60-x_<keymap>.hex` will be generated under `s60-x/`.
+A file named `s60-x_<keymap>.hex` will be generated under project root `qmk_firmware/`.
 
 ## Flash keyboard firmware
 
@@ -36,6 +36,8 @@ Turn over S60-X and press the S1 button to get ready for flashing. After the but
 ```
 $ sudo dfu-programmer atmega32u4 erase && sudo dfu-programmer atmega32u4 flash s60-x_donkey.hex && sudo dfu-programmer atmega32u4 start
 ```
+
+If there occurs `Device is write protected` error, try to add `--force`. More debug details can be found in this [issue](https://github.com/jackhumbert/qmk_firmware/issues/444).
 
 DONE!
 
