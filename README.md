@@ -1,7 +1,7 @@
 # Config
 
-| Config        | Description   |
-| ------------- | ------------- |
+| File | Description |
+| ---- | ----------- |
 | Rime | Config of [Rime Input][1]（鼠鬚管） |
 | s60-x | Build guide and keycap layout for S60-X keyboard |
 | .bash_profile | ~/.bash_profile |
