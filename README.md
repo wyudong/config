@@ -1,7 +1,5 @@
 # Config
 
-Dump of my preferences on Mac.
-
 | Config        | Description   |
 | ------------- | ------------- |
 | Rime | Config of [Rime Input][1]（鼠鬚管） |
