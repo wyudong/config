@@ -29,7 +29,7 @@ alias rrr='rm -rf'
 
 ## Git commands
 alias cl='git clone'
-alias log='git log --color --graph --pretty=format:'%C(auto)%h%Creset%C(auto)%d%Creset %C(auto)%cd%Creset %C(blue)<%an>%Creset %s' --date=short'
+alias log="git log --color --graph --pretty=format:'%C(auto)%h%Creset%C(auto)%d%Creset %C(auto)%cd%Creset %C(blue)<%an>%Creset %s' --date=short"
 alias st='git status'
 alias add='git add .'
 alias cm='git commit -m'
