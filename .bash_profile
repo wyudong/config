@@ -12,23 +12,27 @@ export PS1="\n\[$(tput bold)\]\[$(tput setaf 5)\]➜ \[$(tput setaf 6)\]\w\[$(tp
 
 ## Shortcuts
 alias ls='ls -G'
-alias ll='ls -al'
-alias ..='cd ../'
+alias ll='ls -ahl'
+alias ..='cd ..'
 alias editgit='atom ~/.gitconfig'
 alias editbash='atom ~/.bash_profile'
 alias resource='source ~/.bash_profile && echo "Done!"'
 alias vi=vim
 alias o=open
-alias bb=clear
+alias xx=clear
 alias unar='~/Downloads/archive/unar1.9.1/unar'
 alias npml='npm list --depth=0'
+alias path='echo $PATH'
+alias qr='node ~/bin/qr.js'
+alias laravel='~/.composer/vendor/bin/laravel'
+alias rrr='rm -rf'
 
 ## Git commands
 alias cl='git clone'
-alias log='git log'
+alias log='git log --color --graph --pretty=format:'%C(auto)%h%Creset%C(auto)%d%Creset %C(auto)%cd%Creset %C(blue)<%an>%Creset %s' --date=short'
 alias st='git status'
 alias add='git add .'
-alias co='git commit -m'
+alias cm='git commit -m'
 alias br='git branch'
 alias ch='git checkout'
 alias diff='git diff'
@@ -37,10 +41,15 @@ alias push='git push origin HEAD'
 alias pull='git pull'
 alias reset-h='git reset HEAD --hard'
 alias reset-m='git reset HEAD~ --mixed'
+alias reset-s='git reset HEAD~ --soft'
 
 ## AWS
-alias ecc='ssh -i /Users/wyudong/Documents/Resource/wyudong-key-pair-cnnorth1.pem ec2-user@ec2-54-222-152-157.cn-north-1.compute.amazonaws.com.cn'
-alias ebs='ssh -i /Users/wyudong/Documents/Resource/wyudong-playground-key-pair.pem ec2-user@ec2-54-222-238-87.cn-north-1.compute.amazonaws.com.cn'
+### Soundlinks (deprecated)
+alias ecc1='ssh -i /Users/wyudong/Documents/Resource/wyudong-key-pair-cnnorth1.pem ec2-user@ec2-54-222-152-157.cn-north-1.compute.amazonaws.com.cn'
+### UPoint
+alias ecc2='ssh -i /Users/wyudong/Documents/Resource/wyudong-key-pair-cnnorth1.pem ec2-user@ec2-54-222-239-96.cn-north-1.compute.amazonaws.com.cn'
+### Soundlinks EBS
+alias ebs='ssh -i /Users/wyudong/Documents/Resource/wyudong-playground-key-pair.pem ec2-user@ec2-54-223-35-221.cn-north-1.compute.amazonaws.com.cn'
 alias s3ls='aws s3 ls'
 alias s3cp='aws s3 cp'
 alias s3mv='aws s3 mv'
