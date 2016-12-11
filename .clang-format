@@ -12,7 +12,7 @@ BraceWrapping:
     AfterStruct:           false
     AfterUnion:            false
     BeforeCatch:           false
-    BeforeElse:            false
+    BeforeElse:            true
     IndentBraces:          false
 PointerAlignment: Right
 SpacesBeforeTrailingComments: 4
