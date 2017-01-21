@@ -9,61 +9,28 @@ parse_git_branch() {
 export PS1="\n\[$(tput bold)\]\[$(tput setaf 5)\]➜ \[$(tput setaf 6)\]\w\[$(tput setaf 3)\]\$(parse_git_branch) \[$(tput sgr0)\]"
 
 # Aliases
-
-## Shortcuts
-alias ls='ls -G'
-alias ll='ls -ahl'
-alias ..='cd ..'
-alias editgit='atom ~/.gitconfig'
 alias editbash='atom ~/.bash_profile'
+alias editalias='atom ~/.bash_aliases'
 alias resource='source ~/.bash_profile && echo "Done!"'
-alias vi=vim
-alias o=open
-alias xx=clear
-alias unar='~/Downloads/archive/unar1.9.1/unar'
-alias npml='npm list --depth=0'
-alias path='echo $PATH'
-alias qr='node ~/bin/qr.js'
-alias laravel='~/.composer/vendor/bin/laravel'
-alias rrr='rm -rf'
 
-## Git commands
-alias cl='git clone'
-alias log="git log --color --graph --pretty=format:'%C(auto)%h%Creset%C(auto)%d%Creset %C(auto)%cd%Creset %C(blue)<%an>%Creset %s' --date=short"
-alias st='git status'
-alias add='git add .'
-alias cm='git commit -m'
-alias br='git branch'
-alias ch='git checkout'
-alias diff='git diff'
-alias fetch='git fetch'
-alias push='git push origin HEAD'
-alias pull='git pull'
-alias reset-h='git reset HEAD --hard'
-alias reset-m='git reset HEAD~ --mixed'
-alias reset-s='git reset HEAD~ --soft'
+# More aliases
+source ~/.bash_aliases
 
-## AWS
-### Soundlinks (deprecated)
-alias ecc1='ssh -i /Users/wyudong/Documents/Resource/wyudong-key-pair-cnnorth1.pem ec2-user@ec2-54-222-152-157.cn-north-1.compute.amazonaws.com.cn'
-### UPoint
-alias ecc2='ssh -i /Users/wyudong/Documents/Resource/wyudong-key-pair-cnnorth1.pem ec2-user@ec2-54-222-239-96.cn-north-1.compute.amazonaws.com.cn'
-### Soundlinks EBS
-alias ebs='ssh -i /Users/wyudong/Documents/Resource/wyudong-playground-key-pair.pem ec2-user@ec2-54-223-35-221.cn-north-1.compute.amazonaws.com.cn'
-alias s3ls='aws s3 ls'
-alias s3cp='aws s3 cp'
-alias s3mv='aws s3 mv'
-alias s3rm='aws s3 rm'
-alias s3sync='aws s3 sync'
-
-## Gulp
-alias gs='gulp serve'
-alias gb='gulp build'
-alias gd='gulp dist'
-
-# mkdir and cd
-function take() {
+# Shortcuts
+## `mkdir` and go to that dir
+function hit() {
     mkdir "$1" && cd "$1"
+}
+
+## `cd` and `ll`
+function cs() {
+    cd "$1" && ll
+}
+
+## AnyBar
+## https://github.com/tonsky/AnyBar
+function anybar {
+    echo -n $1 | nc -4u -w0 localhost ${2:-1738};
 }
 
 # PATH
@@ -89,7 +56,7 @@ export JAVA_HOME="$(/usr/libexec/java_home -v 1.8)"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 ## z script (https://github.com/rupa/z)
-. /usr/local/bin/z.sh
+source /usr/local/bin/z.sh
 
 ## git-completion
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
