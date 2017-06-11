@@ -23,7 +23,7 @@ $ brew install dfu-programmer
 
 Clone `https://github.com/jackhumbert/qmk_firmware.git` and cd to `qmk_firmware/keyboards/s60-x/`. Files under `keymaps/` are good references for building custom keymaps. If you are interested in my [keymap](https://github.com/wyudong/config/tree/master/s60-x/keymaps/donkey), just download `keymaps` folder in this repository.
 
-Build `keymap.c` to `<keymap>.hex` using :
+Build `keymap.c` to `<keymap>.hex` using:
 
 `$ make keymap=[custom|poker|poker_set|poker_bit|plain|hasu|spacefn|hhkb|<keymap>]`
 
